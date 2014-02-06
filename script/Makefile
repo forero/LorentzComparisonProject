@@ -1,22 +1,20 @@
 #input variables
 INPUT_RESOLUTION=256
-WEB_RESOLUTION=512
+WEB_RESOLUTION=256
 SMOOTH_SCALE=1.00
-BOX_SIZE=100
+BOX_SIZE=200
 
 # Setup executable paths
 TVWEB_PATH=/home/forero/Dropbox/TV-Web/src/
 EXEC_NAME = ./smooth_bolshoi.x
 
-
 PATH_RAW=/home/forero/work/data/WebFinderComparison/Box$(BOX_SIZE)/$(INPUT_RESOLUTION)/
 PATH_TWEB=/home/forero/work/data/WebFinderComparison/Box$(BOX_SIZE)/$(INPUT_RESOLUTION)/Tweb/$(WEB_RESOLUTION)
-SNAP_NAME=snap100Mpc$(INPUT_RESOLUTION)_z0
+SNAP_NAME=snap$(BOX_SIZE)Mpc$(INPUT_RESOLUTION)_z0
 PATH_POST=../data/$(INPUT_RESOLUTION)/
 
 
 FILE_SNAP=$(PATH_RAW)/$(SNAP_NAME)
-
 
 #TWEB FILENAMES
 FILE_DENSITY_TWEB=$(PATH_TWEB)/$(SNAP_NAME).CIC
