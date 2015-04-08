@@ -1,3 +1,44 @@
+\subsection{Tidal Shear Tensor}
+\label{section:forero-romero}
+
+This method \cite{2009MNRAS.396.1815F} works on density fields grids
+obtained either from numerical simulations  or reconstructions from
+redshift surveys. 
+
+The method improves on the work by \citep{2007MNRAS.375..489H}. It
+also  uses the Hessian of the gravitational potential 
+\begin{equation}
+T_{\alpha\beta} = \frac{\partial^2\phi}{\partial x_\alpha\partial x_\beta},
+\end{equation}
+%
+where the physical gravitational potential has been normalized by
+$4\pi G\bar{\rho}$ so that $\phi$ satisfies the Poisson
+equation
+\begin{equation}
+\nabla^2\phi=\delta,
+\end{equation}
+%
+with $\delta$ the dimensionless matter overdensity, $G$ the
+gravitational constant and $\bar{\rho}$ the average density of the
+Universe.
+
+This tidal tensor can be represented by a real symmetric $3\times 3$
+matrix with eigenvalues $\lambda_1>\lambda_2>\lambda_3$ and
+eigenvectors ${\bf e}_1$, ${\bf e}_2$ and ${\bf e}_3$. The eigenvalues
+are indicators of orbital stability along the directions defined by
+the eigenvectors. 
+
+This method introduces a threshold $\lambda_{\rm th}$ to gauge the
+strenght of the eigenvalues of the Tidal Shear Tensor. The number of
+eigenvalues larger than the threshold is used to classify the cosmic
+web into four kinds of environments: voids (3 eigenvalues smaller than
+$\lambda_{\th}$), sheets (2), filaments (1) and knots (0).
+
+
+
+
+
+
 \subsection{Velocity Shear Tensor}
 \label{section:libeskind}
 The cosmic web may be quantified directly using the cosmic velocity field, as suggested by \cite{2012MNRAS.425.2049H}. This method is ideally suited to numerical simulations but may be applied to any cosmic velocity field, for example reconstructed ones from redshift or velocity data.
